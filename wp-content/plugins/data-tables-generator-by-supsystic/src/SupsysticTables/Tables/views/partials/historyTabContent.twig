@@ -1,0 +1,16 @@
+<div class="row row-tab" id="row-tab-table-history">
+    {% set url = build_pro_url({ 'utm_medium': 'table_history' })  %}
+
+    {% block content %}
+        <div class="col-xs-12">
+            <a href="{{ url }}" class="button button-hero" target="_blank">
+                {{ environment.translate('Get PRO') }}
+            </a>
+        </div>
+        <div class="col-xs-12">
+            <a href="{{ url }}" target="_blank">
+                <img src="{{ environment.getModule('tables').getLocationUrl() }}/assets/img/table_history.png" alt="Tables History" title="Available in PRO version" style="width: 100%; height: auto;">
+            </a>
+        </div>
+    {% endblock %}
+</div>

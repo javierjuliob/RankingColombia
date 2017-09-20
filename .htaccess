@@ -1,0 +1,43 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteRule ^/wp-content/hostinger-page-cache/ - [L]
+	RewriteCond %{REQUEST_METHOD} !POST
+	RewriteCond %{QUERY_STRING} !.*=.*
+	RewriteCond %{HTTP_COOKIE} !(wordpress_test_cookie|comment_author|wp\-postpass|wordpress_logged_in|wptouch_switch_toggle|wp_woocommerce_session_) [NC]
+	RewriteCond %{DOCUMENT_ROOT}/wp-content/hostinger-page-cache/$1/_index.html -f
+	RewriteRule ^(.*)$ /wp-content/hostinger-page-cache/$1/_index.html [L]
+</IfModule>
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/jpg "access plus 1 year"
+	ExpiresByType image/jpeg "access plus 1 year"
+	ExpiresByType image/gif "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType application/pdf "access plus 1 month"
+	ExpiresByType text/javascript "access plus 1 month"
+	ExpiresByType image/x-icon "access plus 1 year"
+	ExpiresDefault "access plus 1 weeks"
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^android-chrome-192x192\.png /wp-content/uploads/fbrfg/android-chrome-192x192.png [QSA,L]
+RewriteRule ^android-chrome-256x256\.png /wp-content/uploads/fbrfg/android-chrome-256x256.png [QSA,L]
+RewriteRule ^apple-touch-icon\.png /wp-content/uploads/fbrfg/apple-touch-icon.png [QSA,L]
+RewriteRule ^browserconfig\.xml /wp-content/uploads/fbrfg/browserconfig.xml [QSA,L]
+RewriteRule ^favicon-16x16\.png /wp-content/uploads/fbrfg/favicon-16x16.png [QSA,L]
+RewriteRule ^favicon-32x32\.png /wp-content/uploads/fbrfg/favicon-32x32.png [QSA,L]
+RewriteRule ^favicon\.ico /wp-content/uploads/fbrfg/favicon.ico [QSA,L]
+RewriteRule ^manifest\.json /wp-content/uploads/fbrfg/manifest.json [QSA,L]
+RewriteRule ^mstile-150x150\.png /wp-content/uploads/fbrfg/mstile-150x150.png [QSA,L]
+RewriteRule ^safari-pinned-tab\.svg /wp-content/uploads/fbrfg/safari-pinned-tab.svg [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

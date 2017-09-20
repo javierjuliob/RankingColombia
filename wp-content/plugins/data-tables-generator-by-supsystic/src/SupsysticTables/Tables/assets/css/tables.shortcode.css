@@ -1,0 +1,234 @@
+.supsystic-tables-wrap .supsystic-table .bold {
+  font-weight: 700;
+}
+.supsystic-tables-wrap .supsystic-table .italic {
+  font-style: italic;
+}
+.supsystic-tables-wrap .supsystic-table .underline {
+	text-decoration: underline;
+}
+.supsystic-tables-wrap .supsystic-table .htLeft {
+  text-align: left;
+}
+.supsystic-tables-wrap .supsystic-table .htRight {
+  text-align: right;
+}
+.supsystic-tables-wrap .supsystic-table .htCenter {
+  text-align: center;
+}
+.supsystic-tables-wrap .supsystic-table .htTop {
+  vertical-align: top;
+}
+.supsystic-tables-wrap .supsystic-table .htMiddle {
+  vertical-align: middle;
+}
+.supsystic-tables-wrap .supsystic-table .htBottom {
+  vertical-align: bottom;
+}
+.supsystic-tables-wrap .supsystic-tables-export ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.supsystic-tables-wrap .supsystic-tables-export ul li {
+  display: inline-block !important;
+  margin-left: 10px;
+}
+.supsystic-tables-wrap .supsystic-tables-export ul li:first-child {
+  margin-left: 0;
+}
+.supsystic-tables-wrap .supsystic-tables-export ul li .export-label, .supsystic-tables-wrap .supsystic-tables-export ul li a {
+	line-height: 1.2em;
+	vertical-align: middle;
+}
+
+.supsystic-tables-wrap {
+ position: relative;
+ width: 100%;
+ overflow: hidden;
+ box-sizing: border-box;
+ -webkit-overflow-scrolling: touch;
+}
+
+.supsystic-tables-wrap .supsystic-table {
+  box-sizing: border-box;
+}
+
+table.supsystic-table td {
+  white-space: pre-line !important;
+}
+table.supsystic-table.nowrap td {
+  white-space: nowrap !important;
+}
+table.supsystic-table img {
+  max-width:100%;
+  height:auto;
+}
+
+.supsystic-tables-wrap table.supsystic-table .no-header tr:first-child td {
+  border-top: 1px solid #111;
+}
+.supsystic-tables-wrap .dataTables_wrapper .dataTables_paginate .paginate_button {
+	position: relative;
+	width: auto !important;
+	height: auto !important;
+	background-color: transparent;
+	opacity: 1;
+	transition: none;
+}
+.supsystic-tables-wrap.pagination-large .dataTables_paginate .paginate_button {
+	padding: 0.5em 1em;
+}
+.supsystic-tables-wrap.pagination-medium .dataTables_paginate .paginate_button {
+	padding: 0.3em 0.7em;
+}
+.supsystic-tables-wrap.pagination-small .dataTables_paginate .paginate_button {
+	padding: 0.1em 0.5em;
+}
+table.supsystic-table .ww-h {
+  white-space: nowrap !important;
+  overflow: hidden;
+  max-width: 0;
+}
+
+table.supsystic-table {
+  table-layout: auto!important;
+  max-width: none;
+}
+
+table.supsystic-table .ww-v {
+  white-space: nowrap !important;
+  overflow: visible;
+  max-width: 0;
+}
+
+
+.dataTables_wrapper .dataTables_filter input {
+  width: auto;
+  margin-bottom: 1em;
+}
+
+table.supsystic-table .ww-v {
+  max-width: auto;
+}
+
+.supsystic-tables-features div {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  background-color: #2B2B2B;
+  text-indent: .5px;
+  line-height: 14.5px;
+  font-size: 14px;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
+  background-color: #888;
+  line-height: 14.5px;
+  font-size: 14px;
+}
+/* Reset border styles for data tables, because border and border-left, border-right etc. styles are applied on table at the same time */
+table.dataTable tbody th, table.dataTable tbody td {
+	border: none;
+}
+/* Add .no-border class for disable table borders at all */
+table.dataTable.no-border.no-footer, table.dataTable.no-border th, table.dataTable.no-border td {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+table.oneColumn,
+table.oneColumn thead,
+table.oneColumn tbody,
+table.oneColumn th,
+table.oneColumn td,
+table.oneColumn tr { 
+  display: block; 
+}
+
+table.oneColumn thead tr { 
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+table.oneColumn tr {
+  border: 1px solid #ccc;
+  height: auto!important;
+}
+
+table.oneColumn td { 
+  border: none;
+  border-bottom: 1px solid #eee; 
+  position: relative;
+  text-align: left;
+  width: 100%!important;
+  box-sizing: border-box;
+}
+
+table.oneColumnWithLabels td {
+  padding-left: 50%!important;
+  border-top: none !important;
+}
+
+table.oneColumnWithLabels td:before { 
+  position: absolute;
+  text-align: left;
+  top: 6px;
+  left: 6px;
+  width: 45%; 
+  padding-right: 10px; 
+  white-space: nowrap;
+}
+
+table.oneColumnWithLabels td:after { 
+  content: '';
+  display: inline-block;
+}
+
+.supsystic-table.collapsed tr.child table td {
+  overflow-y: auto;
+}
+
+.supsystic-table.fixedHeader-floating, .supsystic-table.fixedFooter-floating {
+	display: none;
+}
+
+.supsystic-tables-wrap table.supsystic-table tr .hiddenCell {
+	display: none !important;
+}
+
+/* Frontend spinner styles */
+.spinner {
+	width: 40px;
+	height: 40px;
+	background-color: #333;
+
+	margin: 100px auto;
+	-webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+	animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+	0% { -webkit-transform: perspective(120px) }
+	50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+	100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+	0% {
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	} 50% {
+		  transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+		  -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	  } 100% {
+			transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+			-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+		}
+}
